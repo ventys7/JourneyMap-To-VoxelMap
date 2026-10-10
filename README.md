@@ -1,15 +1,34 @@
-# JourneymapToVoxelmap
-a tool to convert the waypoint of journeymap to voxelmap in a single file
+# JourneyMap-to-VoxelMap
 
-# How to use
+This Python script is a utility to convert Minecraft waypoints from the JourneyMap format (.dat) into the VoxelMap format (.points).
 
-create a new folder named "input" and put there the journeymap waypoints.
+⚠️ Important Disclaimer
+- - Project Status: This fork is provided as-is and may not receive further updates. The upstream repository does not specify a license.
+- Known Issues: The waypoint color converter is currently not working as intended. Waypoints may appear with default colors regardless of their original settings.
+- Platform: This script has only been tested on macOS. Compatibility with Windows or Linux is not guaranteed but likely.
+- This code has been refactored and optimized with the help of AI to ensure better error handling and compatibility with modern Python 3 environments.
 
-then edit main.py and change the name of the world
 
-then start the script and you'll find the voxelmap file in output 
+🛠 Requirements | To run this script, you need:
+- Python 3 installed on your system.
+- The nbtlib library to handle Minecraft's NBT file format.
+You can install the required dependency using pip:
+- pip install nbtlib
 
+🚀 How to Use
+1. Setup Folders
+- Place the main.py script in a folder. The script will automatically look for or create an input/ and output/ directory.
+2. Add your Data
+- Copy your JourneyMap WaypointData.dat file into the input/ folder.
+3. Run the Script
+- Open your terminal in the project directory and execute:
+  - python3 main.py
+4. Collect Output
+- Your converted waypoints will be generated in the output/ folder as a file named journey_from_dat.points. You can then move this file into your VoxelMap waypoints directory.
 
-# Collaborate 
+🌟 Credits & Acknowledgments
 
-if any issue or question open an issue ticket or contact on my email
+  This project is a derivative work based on the foundational logic of the repository by **AoNoAsgard**
+  - link: https://github.com/AoNoAsgard/JourneymapToVoxelmap.
+
+All credit for the core idea goes to the original author.
